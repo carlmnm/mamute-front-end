@@ -19,8 +19,8 @@ export default function LogInForm() {
             const userData = await login(email, password)
             setUserData(userData)
             navigate('/home')
-        } catch (errror) {
-            alert('Não foi possível fazer login')
+        } catch (error) {
+            if(error) alert('Não foi possível fazer login')
         }
     }
 
