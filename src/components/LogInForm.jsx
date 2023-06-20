@@ -20,7 +20,7 @@ export default function LogInForm() {
             setUserData(userData)
             navigate('/home')
         } catch (error) {
-            if(error) alert('Não foi possível fazer login')
+            if(error) alert(error)
         }
     }
 
